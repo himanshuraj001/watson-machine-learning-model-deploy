@@ -19,6 +19,10 @@ Use machine learning with anonymous patient data to predict the best drug to tre
 
 * https://github.com/IBM/prediction-using-watson-machine-learning
 
+### Other URLs
+
+* [Demo URL](https://www.ibm.com/cloud/garage/demo/try-ai-openscale)
+
 # Summary
 
 > **DISCLAIMER**: This notebook is used for demonstrative and illustrative purposes only and does not constitute an offering that has gone through regulatory review. It is not intended to serve as a medical application. There is no representation as to the accuracy of the output of this application and it is presented without warranty.
@@ -69,6 +73,7 @@ When the reader has completed this Code Pattern, they will understand how to:
 
 > To view services, see [https://console.bluemix.net/catalog/](https://console.bluemix.net/catalog/)
 
+* [AI OpenScale](https://console.bluemix.net/catalog/services/ai-openscale)
 * IBM Watson Studio
 * IBM Machine Learning
 * Apache Spark
@@ -94,13 +99,12 @@ When the reader has completed this Code Pattern, they will understand how to:
 * [title](url): description
 
 # Announcement
-Using machine learning in an application can produce impressive results, but moving from model training stage to production application is a lot of work. While frameworks like Apache Spark MLlib, Scikit-learn, Xgboost help to reduce model building workload, the IBM Watson Machine Learning is a solution that can productionalize those models in minutes. By taking advantage of Watson Machine Learning web service deployment of models, developers can easily start building their application with powerfull REST API.
+Using machine learning in an application can produce impressive results, but moving from the model training stage to a production application is a lot of work. While frameworks like Apache Spark MLlib, Scikit-learn, and Xgboost can help to reduce the model building workload, IBM Watson Machine Learning is a solution that can productionalize those models in minutes. By taking advantage of Watson Machine Learning web service deployment of models, developers can easily start building their application with powerful REST APIs.
 
-In this code pattern, we use the machine learning classification algorithm to solve a requirement from biomedical company that produces heart drugs. The company has collected data about a set of patients, all of whom suffered from the same illness. During their course of treatment, each patient responded to one of five medications. Based on treatment records they would like to predict the best drug for the patient. 
-The pattern shows exact steps how that data and Spark MLlib package are used to train a model that predicts the best drug.
+In this code pattern, we use the machine learning classification algorithm to solve a requirement from a fictional biomedical company that produces heart drugs. The company has collected data about a set of patients, all of whom suffered from the same illness. During their course of treatment, each patient responded to one of five medications. Based on treatment records, they would like to predict the best drug for the patient.
+The pattern shows the exact steps demonstrating how that data and the Spark MLlib package are used to train a model that predicts the best drug.
 
+Next, the trained model is published to a Watson Machine Learning repository on Cloud and finally deployed as a web-service.
+Using web-service details such as the scoring endpoint and credentials, the model is being scored i.e.: new patient's records are being sent in a request and the drug recommendation is returned in the response.
 
-Next, the trained model is published to Watson Machine Learning repository on CLoud and finally deployed as a web-service.
-Using web-service details such as: scoring endpoint and credentials the model is being scored i.e.: new patient's records is being send in a request and drug recommendation is returned in response.
-
-Try it out and let me know what you think!
+Try it out and let us know what you think!
